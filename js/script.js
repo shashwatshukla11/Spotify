@@ -52,11 +52,12 @@ async function getsongs(folder) {
     let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
-    songs = [];
+    songs = []
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
-        if (element.href.endsWith(".mp3"))
+        if (element.href.endsWith(".mp3")){
             songs.push(element.href.split(`/${folder}/`)[1])
+    }
     }
 
 
