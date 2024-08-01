@@ -47,9 +47,6 @@ async function getsongs(folder) {
     // let a = await fetch(`http://127.0.0.1:1000/${folder}/`)
     
     // let a = await fetch(`/${folder}/`)
-    
-    let a = await fetch(`/${currFolder}/`)
-    
     let response = await a.text();
     // console.log(response);
     let div = document.createElement("div")
